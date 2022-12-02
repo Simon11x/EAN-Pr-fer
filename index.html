@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>
+		Prüfziffer EAN
+		</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script>
+			"use strict";
+			function rechne() {
+
+			var vZ1
+			var vZ2
+			var vZ3
+			var vZ4
+			var vZ5
+			var vZ6
+			var vZ7
+			var vZ8
+			var vZ9
+			var vZ10
+			var vZ11
+			var vZ12
+			
+			vZ1 = document.getElementById("idZ1").value;
+			vZ2 = document.getElementById("idZ2").value;
+			vZ3 = document.getElementById("idZ3").value;
+			vZ4 = document.getElementById("idZ4").value;
+			vZ5 = document.getElementById("idZ5").value;
+			vZ6 = document.getElementById("idZ6").value;
+			vZ7 = document.getElementById("idZ7").value;
+			vZ8 = document.getElementById("idZ8").value;
+			vZ9 = document.getElementById("idZ9").value;
+			vZ10 = document.getElementById("idZ10").value;
+			vZ11 = document.getElementById("idZ11").value;
+			vZ12 = document.getElementById("idZ12").value;
+			
+			var vS
+
+			vS = document.getElementById("idvS").value;
+
+			vS = vZ1 * 1
+			vS = vS + vZ2 * 3 
+			vS = vS + vZ3 * 1
+			vS = vS + vZ4 * 3
+			vS = vS + vZ5 * 1	
+			vS = vS + vZ6 * 3
+			vS = vS + vZ7 * 1
+			vS = vS + vZ8 * 3	
+			vS = vS + vZ9 * 1
+			vS = vS + vZ10 * 3
+			vS = vS + vZ11 * 1
+			vS = vS + vZ12 * 3
+
+			if ( 10 - (vS % 10) == 0) {
+					vAusgabeHtml = 
+
+			}
+			
+			}
+			
+			
+		</script>
+	
+</head>
+
+	<body>
+		<h1>Prüfziffer EAN</h1>
+		Europäische Artikelnummer: 
+		<input id="idZ1" type="text" maxlength="1" size="1" value="4">
+		<input id="idZ2" type="text" maxlength="1" size="1" value="2">
+		<input id="idZ3" type="text" maxlength="1" size="1" value="6">
+		<input id="idZ4" type="text" maxlength="1" size="1" value="0">
+		<input id="idZ5" type="text" maxlength="1" size="1" value="0">
+		<input id="idZ6" type="text" maxlength="1" size="1" value="7">
+		<input id="idZ7" type="text" maxlength="1" size="1" value="4">
+		<input id="idZ8" type="text" maxlength="1" size="1" value="8">
+		<input id="idZ9" type="text" maxlength="1" size="1" value="4">
+		<input id="idZ10" type="text" maxlength="1" size="1" value="2">
+		<input id="idZ11" type="text" maxlength="1" size="1" value="3">
+		<input id="idZ12" type="text" maxlength="1" size="1" value="8">
+		
+		
+		</br> 
+		</br> 
+		<button onClick="rechne();">Rechne!</button>
+		</br> 
+		</br> 
+		<div id="idAusgabeHTML"></div>
+	</body>
+</html>
